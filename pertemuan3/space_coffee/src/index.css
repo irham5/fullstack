@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --emerald: #144d36;
+  --emerald-light: #248259;
+  --sage: #9bb396;
+  --sage-light: #c2d1be;
+  --cream: #faf7f2;
+  --cream-dark: #eee8d8;
+  --text-dark: #1b2622;
+  --text-light: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: var(--emerald);
+  color: var(--text-light);
+}
+
+.btn-primary:hover {
+  background-color: var(--emerald-light);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(20, 77, 54, 0.2);
+}
+
+.btn-secondary {
+  background-color: var(--sage);
+  color: var(--text-dark);
+}
+
+.btn-secondary:hover {
+  background-color: var(--sage-light);
+  transform: translateY(-2px);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--emerald);
+  margin-bottom: 2rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 80px; /* offset for fixed navbar */
+}

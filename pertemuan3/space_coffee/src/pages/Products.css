@@ -1,0 +1,25 @@
+.products-page {
+  padding: 60px 0;
+  background-color: var(--cream);
+  min-height: calc(100vh - 80px);
+}
+
+.page-title {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--emerald);
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
